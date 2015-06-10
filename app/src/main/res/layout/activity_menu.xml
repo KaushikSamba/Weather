@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kaushiksamba.weather.MenuActivity"
+    android:background="#ff000000"
+    >
+
+    <TextView
+        android:text="@string/menu_instruction"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:id="@+id/textview"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_hint"
+        android:id="@+id/location"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffffff"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:singleLine="true"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/location"
+        android:text="@string/button_text"
+        android:onClick="change_location" />
+</RelativeLayout>

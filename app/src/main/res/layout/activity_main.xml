@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff000000"
+    android:id="@+id/layout">
+<!--
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/basic_text"
+        android:textColor="#ffffffff" />
+-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="35dp"
+        android:id="@+id/max_temp"
+        android:text="@string/max"
+        android:textSize="60sp"
+        android:textColor="#ffffffff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slash"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/max_temp"
+        android:layout_toEndOf="@+id/max_temp"
+        android:layout_alignBottom="@id/max_temp"
+        android:text="@string/slash"
+        android:textSize="30sp"
+        android:textColor="#ffffffff"
+        android:paddingBottom="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/min_temp"
+        android:text="@string/min"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/slash"
+        android:layout_toEndOf="@+id/slash"
+        android:layout_alignBottom="@id/slash"
+        android:textColor="#ffffffff"
+        android:paddingBottom="10dp"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="60dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/icon"
+        android:src="@drawable/search"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/weather_icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/city_name"
+        android:text="@string/city_name"
+        android:layout_above="@+id/country_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/country_name"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/country_name"
+        android:textSize="20sp"
+        android:paddingBottom="40dp"
+        android:textColor="#ffffffff" />
+</RelativeLayout>

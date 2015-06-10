@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Change location</string>
+    <string name="slash">  / </string>
+    <string name="max">MAX</string>
+    <string name="min">MIN</string>
+    <string name="city_name">CITY NAME</string>
+    <string name="country_name">COUNTRY NAME</string>
+    <string name="weather_icon">Weather icon</string>
+    <string name="title_activity_menu">Change location</string>
+    <string name="menu_instruction">Enter your location:</string>
+    <string name="edit_hint">Enter your location</string>
+    <string name="button_text">Save</string>
+</resources>
